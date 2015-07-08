@@ -110,8 +110,7 @@ int main(int argc, char** argv){
 
 					float maxflow;
 					float minflow;
-//                                	BroxOpticalFlow flow(0.12,5.0,0.9,3,50,20);
-                                	BroxOpticalFlow flow(0.5,3.0,0.9,3,50,20);
+                                	BroxOpticalFlow flow(0.12,5.0,0.9,3,50,20);
 	                                GpuMat d_fu;
         	                        GpuMat d_fv;
                 	                flow(frame0,frame1,d_fu,d_fv);
