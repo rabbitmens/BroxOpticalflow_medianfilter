@@ -10,7 +10,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-#define ONEFOLDER true
+#define ONEFOLDER false
 
 enum Primeorder { RMO =1, ROM =2, RMOM =3}; // RGB , Median , Optical Flow
 
@@ -36,9 +36,9 @@ void opticalflow(Mat& prev, Mat& cur, BroxOpticalFlow flow,GpuMat& d_fu, GpuMat&
 int main(int argc, char** argv){
 
 
-	Primeorder order = RMOM;
-	char originpath[100] = "/media/disk1/bgsim/action/dataset/objjpgimages";
-	char savepath[100] = "/media/disk1/bgsim/action/dataset/RMOMopticalimages";
+	Primeorder order = ROM;
+	char originpath[100] = "/media/disk1/bgsim/action/dataset/images";
+	char savepath[100] = "/media/disk1/bgsim/action/dataset/ROMimages";
 
 	BroxOpticalFlow flow(0.12,5.0,0.9,3,50,20);
 
