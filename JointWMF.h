@@ -153,6 +153,8 @@ public:
 		//merge the channels
 		merge(Is,result);
 
+		
+		float2D_release(wMap);
 		//end of the function
 		return result;
 	}
@@ -646,7 +648,7 @@ private:
 				}
 
 				delete []length;
-
+				
 			}
 
 		}
